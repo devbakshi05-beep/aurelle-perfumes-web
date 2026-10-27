@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #FAF6EF;
+  --card: #FFFFFF;
+  --tx: #1E1A17;
+  --mut: #5E554C;
+  --line: #D8CFC2;
+  --gold: #C9A66B;
+  --accent: #7A5C22;
+  --on-gold: #14110F;
+}
+
+.dark {
+  --bg: #14110F;
+  --card: #1E1A17;
+  --tx: #E8E0D4;
+  --mut: #B8AFA3;
+  --line: #4A413A;
+  --accent: #C9A66B;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-tx: var(--tx);
+  --color-mut: var(--mut);
+  --color-line: var(--line);
+  --color-gold: var(--gold);
+  --color-accent: var(--accent);
+  --color-on-gold: var(--on-gold);
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-jost);
+}
+
+body {
+  background: var(--bg);
+  color: var(--tx);
+}

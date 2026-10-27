@@ -1,0 +1,3 @@
+# Netlify Next.js ko khud pehchan leta hai. Yahan sirf Node ka version pakka kiya hai.
+[build.environment]
+  NODE_VERSION = "22"
